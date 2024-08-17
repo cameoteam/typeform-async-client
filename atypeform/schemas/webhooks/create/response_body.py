@@ -11,7 +11,7 @@ class ResponseBodyModel(BaseModel):
     enabled: Optional[bool]
     form_id: Optional[str]
     id_: Optional[str] = Field(alias="id")
-    secret: Optional[str]
+    # secret: Optional[str]
     tag: Optional[str]
     updated_at: Optional[str]
     url: Optional[str]

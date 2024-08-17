@@ -25,16 +25,16 @@ class ChoiceModel(BaseModel):
 
 class AnswerModel(BaseModel):
     field: FieldModel
-    text: Optional[str]
+    text: Optional[str] = None
     type_: str = Field(alias="type")
-    boolean: Optional[bool]
-    email: Optional[str]
-    number: Optional[int]
-    choices: Optional[ChoicesModel]
-    date: Optional[str]
-    choice: Optional[ChoiceModel]
-    file_url: Optional[str]
-    phone_number: Optional[str]
+    boolean: Optional[bool] = None
+    email: Optional[str] = None
+    number: Optional[int] = None
+    choices: Optional[ChoicesModel] = None
+    date: Optional[str] = None
+    choice: Optional[ChoiceModel] = None
+    file_url: Optional[str] = None
+    phone_number: Optional[str] = None
 
 
 class CalculatedModel(BaseModel):
